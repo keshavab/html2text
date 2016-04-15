@@ -178,7 +178,7 @@ func FromReader(reader io.Reader) (string, error) {
 	}
 
 	text := strings.TrimSpace(newlineRe.ReplaceAllString(
-		strings.Replace(ctx.Buf.String(), "\n ", "\n", -1), "\n\n"))
+		strings.Replace(ctx.Buf.String(), "\n ", "\n", -1), "\n"))
 	return text, nil
 }
 
